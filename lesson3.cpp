@@ -88,9 +88,14 @@ void p6()
 	cout<<"rate is :"<<rate;
 }
 
+//这个题目看不懂 
 void p7()
 {
-	
+	float o = 0.0,a = 0.0;
+	cout<<"输入每100公里消耗的汽油量（升）：";
+	cin>>o;
+	a = o/19*12.41; 
+	cout<<"可以换算成每加仑"<<a<<"英里"<<endl; 
 }
 int main()
 {
