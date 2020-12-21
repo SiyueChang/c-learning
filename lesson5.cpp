@@ -145,11 +145,65 @@ void p7()
 	{
 		cout << pcar[i].madyear << " " << pcar[i].comname << endl;
 	}
-	//delete struct car *pcar[num];
+	delete pcar;
+}
+void p8()
+{
+	cout << "Enter words (to stop, type the word done):" << endl;
+	int a = 0;
+	char sd[128];
+	while (cin>>sd)
+	{
+		if (strcmp(sd,"done"))
+		{
+			a++;
+		} 
+		else
+		{
+			break;
+		}
+	}
+	cout << "You entered a total of " << a << " words." << endl;
+}
+void p9()
+{
+	cout << "Enter words (to stop, type the word done):" << endl;
+	int a = 0;
+	string sd;
+	while (cin>>sd)
+	{
+		if (sd!="done")
+		{
+			a++;
+		} 
+		else
+		{
+			break;
+		}
+	}
+	cout << "You entered a total of " << a << " words." << endl;
+}
+void p10()
+{
+	cout << "Enter number of rows: " << endl;
+	int a = 0;
+	cin >> a;
+	for (int i = 0;i < a;i++)
+	{
+		for (int j = a - i - 1;j > 0;j--)
+		{
+			cout << ".";
+		}
+		for (int k = 0; k < i + 1; k++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
 }
 int main()
 {
-	p7();
+	p10();
 	system("pause");
 	return 0;
 }
